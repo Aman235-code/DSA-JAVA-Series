@@ -1,0 +1,42 @@
+Array:-
+allows storing multiple values in a single variable.
+collection of elements of the same type stored in a contiguous memory location.
+
+characteristics:-
+1. Fixed size
+2. index based
+3. Homogenous element
+4. contiguous memory location
+
+Array Basics:-
+Types of Array:- 
+1D array:-
+
+declaration:
+	type variableName[];
+	int marks[];
+
+initialize:
+	marks={90,80,10,20,50,75};
+	
+2D Array
+
+internal working of an array:-
+base address + (ith index * size of the block)
+
+benifits of using contiguous memory with array:
+1. Efficient index based access O(1)
+2. Optimized for cache performance
+3. Easier to Manage memory
+
+
+Array ADT:-
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+Data Structure:-
+
+Data -> raw info (name, phno, address)
+Data Structure:-
+way of organizing and storing data so that it can be accessed and modified efficiently.
+defines the layout of data in memory -> imporoves performance of operations like searhing, sorting and inserting.
+eg:-> Array, LL, Trees, Graph
+
+Algorithm:-
+finite sequence of well defined instructions to solve a problem or perform a task.
+focused on optimizing time and space.
+eg:- searching, sorting
+
+Why DSA -> optimizations, coding interviews, real world apps
+
+Complexity:-
+DSA main goal is to solve problems effectively and efficiently
+to determine efficieny of a program we look at two types of complexities:
+-> Time Complexity -> tells us how much time our code takes to run w r t input.
+-> Space "" -> how much memory our code uses
+
+input n -> code
+
+Asymptotic Notation:-
+we use this to compare efficiencies of algorithms.
+it's a mathematical tool that estimates time based on input size without runnig the code.
+focuses on how many basic operations the program performs, giving us an idea of how the 
+algo behaves as input size increases.
+
+types of asymptotic notations:-
+Big O (O):- describes the worst case scenario or the upper bound of how algo performs as input size increases.
+Omega :- best case scenario or lower bound.
+Theta:- average case or how the algo performs generally as input grows.
+
+Big O (O):- worst case
+0 <= f(n) <= c g(n)
+
+c 
+n0>0
+
+Omega:- best case
+Theta:-
+
+0 <= c1g(n) <= f(n) <= c2 g(n)
+
+searching:-
+Linear Search
+3,4,9,2,1 -> arr
+Best Case:- when 3 search :- First position result -> omega 
+worst case:- when search 1:- Last position result (need to compare for every element) -> O
+average case:- when search in middle (9) -> theta
+
+we are interested in rate of growth over time w r t input taken during program execution.
+
+Complexities:-
+Big O(1) - Constant Time
+no matter the size of the array, accessing any element takes the constant time. (1 step)
+eg:- accessing a specific element in an array by index
+
+O(n) - Linear time
+Time grows directly proportional to the size of the input
+eg:- traversing an array of size
+
+O(n square) - Quadratic time
+as input grows, time taken increases quadratically
+eg:- bubble sort/ checking all pairs in an array
+
+O(log n) - Logarithmic time
+algorithm cuts problem size in half with each step, so the time grows logarithmically
+eg:- binary search in a sorted array 
+
+O(n log n) - Linearithmic Time
+algorithm divides input into subproblems and processess each subproblems linearly
+eg:- merge sort/quick sort
+
+O(2^n) - Exponential Time Complexity
+time grows exponentially with size of input,meaning it doubles with each additional input
+eg:- recursive algorithms tht solve a problem by breaking it into multiple smaller subproblems,
+such as calculating Fibonacci numbers using recursion.
+
+o(n!) - Factorial Time Complexity
+occurs in algo that involve generting all possible permutations of a set such as the brute-force solution
+for the traversing salesman problem
+eg:- generating all permutations
+
+o(c) < O(loglogn) < o(logn) < o(log (n^1/2) < o(n) < o(n log n) < n^2, n^3, n^k, 2^n
+
+How to find Time Complexity?
+step1:-
+identify the loops / recursive calls in your algo.
+if the algo has a single loop that runs n times, time complexity is o(n).
+if there is a nested loop , time complexity could be o(n sq), o(n * m) or higher
+
+step 2: for each operation, figure out how many times it runs as input grows.
+constant time operations (like simple arithmetic) are o(1)
+recursive algo my have more complex time complexities that depend on depth of recursion.
+
+step 3: drop constants and non-dominant terms
+if you have o(n + 100), it's simply o(n) because constants don't matter in Big O notation.
+for eg: o(n sq+ n) is simplified to o(n sq) because quadratic term dominates
+
+
+Algo vs Code:-
+algo -> steps to solve problem
+code -> dependent on prgraming language.
+
+ADT:- Abstract Data Type
+Data Types.
+model for DS defines datatype behaviour without specifying implementation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
