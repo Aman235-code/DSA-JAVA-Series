@@ -1,0 +1,89 @@
+Binary Search:-
+1. Searching technique
+2. Array Sorted
+
+array -> 10, 20, 40, 80, 100
+          0  1   2    3   4 
+
+1. midIndex = (0+4)/2 = 2;
+2. check if target element = mid? arr[midIndex] if so then element found (best case)O(1)
+else:-
+	if(target < array[mid]
+		=> high = mid - 1
+	else: 
+		=> low = mid + 1
+
+eg:- 
+array:- 
+
+	12	14	16	23	25	31	42	47	51	55	60	64	77	90
+target = 64
+	
+value->	12	14	16	23	25	31	42	47	51	55	60	64	77	90
+index->	0	1	2	3	4	56	7	8	9	10	11	12	13	14 
+
+low = 0
+high = 14=(size-1)
+
+loop start end till low < high
+calculate mid = (low+high)/2 = 14/2 = 7;
+
+then 
+if arr[7] = 42 > target => 42>64 false 
+else 42 < 67 greater than mid search at right (if so ignore mid index low must be next to mid and high remains intact)
+
+low = mid + 1 => 8
+high = 14
+array should be:- 
+
+value->		47	51	55	60	64	77	90
+index->		8	9	10	11	12	13	14 
+
+calculate mid = (8+14)/2 => 11
+
+then 
+if arr[11] = 60 > target => 60 > 64 false 
+target element is bigger so search right (change low and high remains intact)
+
+low = mid+1 => 12
+high = 14 
+array should be:-
+		64	77	90
+		12	13	14
+
+MID = 13
+ARR[13] = 77 < 64 TRUE then searh left 
+change high = mid - 1 and low -> intact
+
+low=12
+high=13
+
+worst case O(n)
+worst case O(logn) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

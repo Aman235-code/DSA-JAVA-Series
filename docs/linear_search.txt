@@ -1,0 +1,22 @@
+Linear Search:-
+
+array -> 45,50,12,88,44
+         0  1   2  3  4
+
+size = index+1 
+
+search = 50
+
+45 == 50 else loop through
+50 == 50 break return index 
+
+if not traverse all the elements and return -1
+
+code:-
+target = 50
+for (i = 0, i<arr.length;i++):
+	if( target == arr[i]) return i and break 
+	return -1
+
+best case = O(1)
+worst case = O(n)
