@@ -1,0 +1,102 @@
+Linked List:-
+1. Elements are store in nodes that r linked together using pointer.
+
+		|  56 | add of next node (1005)| --------->		|106| 
+		data	address	(8745)					(1005)   
+
+
+first node -> head node
+last node -> tail node
+
+Pointer In Java:-
+there is pointer in Java
+
+1.Implicit pointers 
+2. No explicit pointer in Java
+
+call by value:
+int x = 45 
+int y = x
+int y = 85 
+
+x= 45, y = 85
+
+
+Node is a datatype
+next has address such as x202044 
+data is a type of integer
+head is pointing to the address of the node
+at first (when node = 0) then the next is null and head is also null  
+
+
+
+opertaions:-
+1. Insert operations.
+-> At the end 
+
+	There are many nodes
+	take head to the last node by traversing
+	take temp as ref of head
+	traverse till temp.next!= null
+	temp = temp.next
+	when you reach at last (temp.next = null)
+	temp = address of the last node
+	then:-
+		temp.next = newNode;
+		
+
+
+
+-> At the beginning 
+
+	create the node with the data;
+	Node n = new Node(data);
+	check if any node exists or not
+	if no node exisits (means head == null) then
+		make that node as the first node and 
+		make it's next as null;
+		head must be pointed to the addrss of that node
+	else:-
+		head is pointing to address of the first node.
+		make new node's address = head
+		then head = newNode
+
+-> At a particular position
+
+	given the position
+	if it's pos=0 (first position)
+		newNode.next = head;
+		head =  newNode 
+	else:-
+	take temp = head;
+	traverse
+
+
+--> Delete From Beginning
+--> Delete from end
+--> Delete from specific index 
+--> Search Element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
