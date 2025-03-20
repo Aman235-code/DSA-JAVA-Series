@@ -18,6 +18,7 @@ public class LinkedList {
     Node head = null;
 
     // insert at beginning
+    // O(1)
     public void insertAtBeginning(int item){
 
         Node newNode = new Node(item);
@@ -32,6 +33,7 @@ public class LinkedList {
     }
 
     // insert at last
+    // O(n)
     public void insertAtLast(int item){
         Node newNode = new Node(item);
         if(head == null){
@@ -46,6 +48,7 @@ public class LinkedList {
     }
 
     // insert at specific position
+    // O(n)
     public void insertAtPos(int item, int pos){
         Node newNode = new Node(item);
         if(pos < 0){
@@ -76,6 +79,7 @@ public class LinkedList {
     }
 
     public void deleteFromBeginning(){
+        // O(1)
         if(head == null){
             System.out.println("No Nodes to delete");
             return;
@@ -84,6 +88,7 @@ public class LinkedList {
     }
 
     public void deleteFromLast(){
+        // O(n)
         if(head == null){
             System.out.println("No Nodes to delete");
             return;
@@ -102,6 +107,7 @@ public class LinkedList {
     }
 
     public void deleteFromPos(int pos){
+        // O(n)
         if(head == null){
             System.out.println("No Nodes to delete");
             return;
@@ -140,6 +146,7 @@ public class LinkedList {
         return false;
     }
 
+    // O(n)
     public void printData(){
         Node temp = head;
         if(temp== null){
@@ -212,6 +219,7 @@ public class LinkedList {
             linkedList.insertAtBeginning(data);
         }
         else if(interChoice == 2){
+            
             System.out.println("Enter your data: ");
             int data = s.nextInt();
             linkedList.insertAtLast(data);

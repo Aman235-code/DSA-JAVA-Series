@@ -1,4 +1,5 @@
-Linked List:-
+
+rt447\-0z Linked List:-
 1. Elements are store in nodes that r linked together using pointer.
 
 		|  56 | add of next node (1005)| --------->		|106| 
@@ -78,7 +79,25 @@ opertaions:-
 --> Search Element
 
 
+Doubly Linked List:-
+head=null
+tail=null
+single node = 3 parts
+if 1 node
+prev address | data | next address
+   null		50	null
 
+head and tail pointing to add of this node
+
+if new add from front
+null | 60 | null
+
+head = newNode.next
+
+
+Circular Linked List:-
+next pointer of last node -> head node 
+prev pointer of head node -> last node
 
 
 
