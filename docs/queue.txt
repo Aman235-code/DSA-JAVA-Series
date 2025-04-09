@@ -1,0 +1,9 @@
+FIFO
+enque, deque, peek, isEmpty, isFull
+
+Simple Queue
+circular queue
+priority queue
+deque
+double priority queue
+concurrent queue

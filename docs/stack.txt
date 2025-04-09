@@ -1,0 +1,47 @@
+LIFO -> last in first out
+operations:
+push, pop, peek, isEmpty
+
+
+
+
+10,null
+1929 -> newnode 
+
+top = newNode = 1929
+
+| 20 | 1929 |     |10 | null |     
+   top= 2019         nn =1929
+
+nn.next  = top 
+top = nn push
+
+
+3+6 -> infix 
++36 -> prefix
+36+ -> postfix
+
+
+Reverse string using stack 
+
+Evaluating postfix expressions:-
+a+b*c => abc*+
+
+operands push to stack
+operator?(+,-,/,*): pop 2 elements from stack, perform operation, result pushed to stack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
