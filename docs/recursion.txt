@@ -1,0 +1,72 @@
+function calls
+
+printData1()
+
+printData()
+
+main()
+
+method calls itself to solve a problem
+
+Types:-
+
+1. Tail Recursion - recursive call at last
+	fun(){
+		...
+		...
+		...
+		fun() // last line of the function
+		}
+
+2. Head Recursion - reverse of above
+
+3. Linear
+	fun()
+	{
+	... 
+	...
+	...
+	return n+ fun(n-1)
+	}
+
+4. Tree Recursion:- 
+	each recursive calls = multiple recursive calls (fibonacci series) 
+
+5. direct :-
+	fun(){
+	fun()
+	}
+
+6. Indirect:-
+	fun1(){
+		fun2()
+	}
+	fun2(){
+		fun1()
+	}
+
+7. Nested Recursion:-recursive call is made within the argument of an another func
+
+	fun(){
+	fun( fun() ){
+
+	}
+	}
+
+8. Divide and conquer:- merge sort
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

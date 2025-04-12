@@ -1,0 +1,13 @@
+
+3 towers A,B,C 
+
+A - source 
+B - helper 
+C - destination
+
+2 disks 
+
+n = 2 disks
+move (n-1) disks from src to helper (A-B) using C 
+move n disk from src to dest (A-C)
+move (n-1) disks from hlper to dest (B-C) using A
