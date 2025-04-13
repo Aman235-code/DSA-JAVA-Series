@@ -1,0 +1,157 @@
+Non Linear, heirarchial Data Structure.
+Nodes and vertices (edges)
+
+parent and child relationships
+
+collection of nodes connected by edges
+root node = starting node and rest other child nodes
+
+no cycle
+
+Real Tree Usage:
+1. Movies (File System)
+2.HTML and XML documents
+3. Decision Trees
+
+Terminologies:-
+
+	-A-
+   -B-       C-
+D      E        F-
+		  G
+
+root node = first node = A 
+Nodes = B,C,D,E,F = Data and links of their children
+edge - connection b/w nodes
+parent node = that has child nodes. B -> D,E, C->F 
+child node = -> D child of B , B child of A
+leaf nodes = no child (D,E,F)
+height = longest path from root to leaf  (2) (edges)
+level = 3
+subtree (B,D,E) (C,F)
+degree = A is 2 (how many children node have) B is 2, C is 1
+path = A-F => 2 edges and C  node
+ancestors = any node along the path from node to the root node (G's ancestors -> F,C) (E -> B)
+descandants = any node reachable from that node (B -> D,E) (A-> can go to any node) 
+
+Binary Tree:-
+Hierarchical DS in which each node has atmost 2 children.
+	-1-
+     -2-    3-
+   4     5     6
+
+full binary tree - every node has either 0/2 children
+complete "" ""   - all levels r compltely filled except possibly the last,
+which is filled from l to r
+perfect "" ""   - all integral nodes have 2 children, and all leaf nodes r all at the same level.
+Balanced ""  - difference in height between left and right subtrees is atmost 1
+Degenerate skewed tree - every parent node has one child
+
+Traversal:-
+	Preorder traversal (Root -> left -> right)(DFS)
+	-1-
+     -2-     3-
+   4     5      6
+
+	1,2,4,5,3,6
+
+	Level Order - Level by Level (BFS)
+        -1-
+     -2-     3-
+   4     5       6
+
+	1,2,3,4,5,6
+
+
+Inorder traversal (left -> Root -> right) (DFS)
+	-1-
+     -2-     3-
+   4     5      6
+
+	4,2,5,1,3,6
+
+Postorder traversal ( left -> right -> Root)
+	-1-
+     -2-     3-
+   4     5      6
+
+	4,5,2,6,3,1
+
+Types of Trees:-
+
+1. General Tree:- A tree where each node can have any no of children
+2. Binary Tree:- A tree where each node has at most 2 children (left and right)
+3. Binary Search Tree:-
+	A binary tree where 
+	Left subtree contains nodes with values less than parent node 
+	Right ""     ""        ""     ""   ""    greater "" ""   ""
+4. Balanced Binary Tree:- 
+	A binary tree where height difference b/w left and right subtrees of any node is atmost 1.
+5. Complete Binary Tree:-
+	A binary tree where all levels r completely filled except possibly at last, which is filled from left to right.
+6. Full Binary Tree:-
+	A binary tree where every node has either 0/2 children
+7. Perfect Binary Tree:-
+	'' ''    ''    ''  all interior nodes have two children and all nods are at same level.
+8. AVL tree:-
+	Self balancing binary search tree where height diff b/w left and right subtrees of any node is atmost 1.
+9. Red Black Tree:- A self balancing binary search tree
+	where nodes r either red/black
+	root is black
+	no two red nodes can b adjacent 
+	every path from root to leaf has same no of black nodes
+10. N-ary tree:
+	A tree where each node can have atmost N children.
+11. Trie(Prefix tree)
+	Specialized tree for storing strings.
+	Nodes = characters and paths represent words
+12. Segment Tree:-
+	A tree used to store intervals/segments for efficient range queries.
+13. Fenwick tree (Binary indexed tree)
+	A tree used for efficient prefix sum queries and updates.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
