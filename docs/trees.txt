@@ -111,6 +111,56 @@ Types of Trees:-
 	A tree used for efficient prefix sum queries and updates.
 
 
+Binary Search Tree:-
+	binary tree
+	1. left child contain small value than parent node
+	2. Right child = largr value than parent node
+	3. No duplicates are allowed
+
+	operations:-
+	1. Insert
+	2. Search
+	3. Delete
+
+	Insertion:
+		to insert new node
+		Case 1. If tree is empty make new node = root node
+		Case 2. If key is smaller than root, insert in left subtree
+		Case 3. If key "" greater ""   "", insert in right subtree
+
+	Search:-
+		1. if tree is empty or root matchs key return root
+		2. if key < root node -> search in left subtree
+		3. if key > root node -> search in right subtree
+
+	Deletion:-
+		1. Node has no children remove the node
+		2. Node has 1 children
+			remove the node and connect parent to its child
+		3. Node has 2 childrens
+			find in order successor(smalles node in right subtree)(l,mid.r)
+			and replace the nodes value with it
+			then delete the successor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
